@@ -3,6 +3,7 @@ import random
 random_int = random.randint(1,10)
 print(f"Random integer: {random_int}")
 
+guess_history=[]
 while win == 0:
     guessing=(int(input("Pick a number from 1-10 ")))
     if guessing == random_int:
@@ -17,4 +18,5 @@ while win == 0:
     elif guessing < random_int:
         print("Your number is too low")
         guess_history.append(guess)
-
+        print(f"You tried{guess_history}")
+       
