@@ -13,10 +13,11 @@ while win == 0:
 
     elif guessing > random_int:
         print("Your number is too high")
-        guess_history.append(guess)
+        guess_history.append(guessing)
+        print(f"You tried{guess_history}")
 
     elif guessing < random_int:
         print("Your number is too low")
-        guess_history.append(guess)
+        guess_history.append(guessing)
         print(f"You tried{guess_history}")
        
