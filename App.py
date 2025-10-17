@@ -1,11 +1,11 @@
 win = 0
 import random 
-random_int = random.randint(1,10)
+random_int = random.randint(1,1000)
 #print(f"Random integer: {random_int}")
 
 guess_history=[]
 while win == 0:
-    guessing=(int(input("Pick a number from 1-10 ")))
+    guessing=(int(input("Pick a number from 1-1000: ")))
     if guessing == random_int:
         print("Correct")
         win=1
